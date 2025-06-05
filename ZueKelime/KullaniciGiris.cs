@@ -46,8 +46,8 @@ namespace ZueKelime
                     OturumBilgisi.AktifKullaniciID = kullaniciID;
                     MessageBox.Show("Giriş başarılı.");
                     this.Hide();
-                    //AnaSayfa anasayfa = new AnaSayfa();
-                    //anasayfa.Show();
+                    AnaSayfa anasayfa = new AnaSayfa();
+                    anasayfa.Show();
                 }
                 else
                 {
@@ -64,7 +64,7 @@ namespace ZueKelime
         //giris dogrulamasını yapar
         private int giris(string kullaniciVeyaMail, string sifre)
         {
-            string baglantiMetni = "Data Source=LAPTOP-1V27LL1R;Initial Catalog=ZueDil;Integrated Security=True";
+            string baglantiMetni = "Data Source=LAPTOP-QCSD0KI9\\ZEREN;Initial Catalog=ZueKelime;Integrated Security=True";
 
             try
             {

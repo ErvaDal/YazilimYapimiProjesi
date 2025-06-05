@@ -32,7 +32,7 @@ namespace ZueKelime
         private void btnKayitOl_Click(object sender, EventArgs e)
         {
             //kullanacagimiz veritabani baglantisi
-            string baglantiMetni = "Data Source=LAPTOP-1V27LL1R;Initial Catalog=ZueDil;Integrated Security=True";
+            string baglantiMetni = "Data Source=LAPTOP-QCSD0KI9\\ZEREN;Initial Catalog=ZueKelime;Integrated Security=True";
 
             try
             {
@@ -120,7 +120,7 @@ namespace ZueKelime
         private bool kullaniciMailKontrol() //kullanici adi ve e-mailin onceden var olup olmadigini kontrol ediyor
         {
             //kullanacagimiz veritabani baglantisi
-            string baglantiMetni = "Data Source=LAPTOP-1V27LL1R;Initial Catalog=ZueDil;Integrated Security=True";
+            string baglantiMetni = "Data Source=LAPTOP-QCSD0KI9\\ZEREN;Initial Catalog=ZueKelime;Integrated Security=True";
 
             try
             {

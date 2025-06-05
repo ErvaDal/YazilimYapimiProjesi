@@ -53,7 +53,7 @@ namespace ZueKelime
         private bool sifreGuncelle(string eMail, string hashliYeniSifre)
         {
             //kullanacagimiz veritabani baglantisi
-            string baglantiMetni = "Data Source=LAPTOP-1V27LL1R;Initial Catalog=ZueDil;Integrated Security=True";
+            string baglantiMetni = "Data Source=LAPTOP-QCSD0KI9\\ZEREN;Initial Catalog=ZueKelime;Integrated Security=True";
 
             try
             {
@@ -85,7 +85,7 @@ namespace ZueKelime
         private bool eMailKayitliMi(string eMail)
         {
             //kullanacagimiz veritabani baglantisi
-            string baglantiMetni = "Data Source=LAPTOP-1V27LL1R;Initial Catalog=ZueDil;Integrated Security=True";
+            string baglantiMetni = "Data Source=LAPTOP-QCSD0KI9\\ZEREN;Initial Catalog=ZueKelime;Integrated Security=True";
 
             try
             {
