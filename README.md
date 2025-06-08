@@ -52,3 +52,27 @@ Her harf için renk kodlarıyla geri bildirim verilir:
 🟨: Doğru harf, yanlış yerde
 ⬜️: Harf kelimede yok
 Eğlenceli ve öğretici bu modül, kelimeyi tanıma ve hatırlama becerisini güçlendirir.
+
+
+
+Kullanıcılar sisteme e-posta veya kullanıcı adı ile giriş yapabilir ve kelime öğrenme süreçlerini takip edebilirler.
+
+Grafik ve Raporlama Özelliği
+Uygulamada iki farklı grafik türü bulunur:
+Çubuk Grafik: Kullanıcının kelimeleri kaç kere bildiğini gösterir. Örneğin, "3 kere bilinen kelime sayısı" gibi.
+Daire (Pasta) Grafik: Bu grafik kelimelerin öğrenilme durumlarının yüzdelik dağılımını verir. Yani toplam kelimelerin yüzde kaçı 1 kere, yüzde kaçı 2 kere biliniyor gibi bilgiler sunar.
+Ayrıca kullanıcılar, bu grafiklerin görüntüsünü alarak yazdırabilir, yani performans raporu oluşturabilirler.
+
+Şifre Sıfırlama İşlemi
+Kullanıcılar şifrelerini unuttuklarında uygulama şu adımları izler:
+Kullanıcıdan e-posta adresi alınır ve bu e-postanın sistemde kayıtlı olup olmadığı kontrol edilir.
+Eğer e-posta kayıtlı ise, rastgele yeni ve güvenli bir şifre oluşturulur.
+Yeni şifre, güvenlik için hashlenir (şifrelenir) ve veritabanında kullanıcı hesabına güncellenir.
+Oluşturulan yeni şifre, kullanıcının e-posta adresine otomatik olarak gönderilir.
+Bu sayede kullanıcılar, güvenli ve kolay bir şekilde şifrelerini sıfırlayabilirler.
+
+Güvenlik ve Doğrulama
+Şifre işlemlerinde, yeni şifrelerin doğrudan metin olarak değil, hashlenmiş hali veritabanına kaydedilir. Bu, kullanıcı bilgilerinin kötü niyetli kişilerce ele geçirilmesini engeller. Ayrıca, e-posta gönderimi SSL ile güvence altına alınmıştır.
+
+Kullanıcı Arayüzü ve Kullanılabilirlik
+Uygulamanın arayüzü sade ve kullanıcı dostudur. Grafikler ve rapor yazdırma işlemleri kolayca erişilebilir. Şifre sıfırlama için gerekli olan alanlar ve butonlar açıkça yerleştirilmiştir. Kullanıcı, hangi adımı yapması gerektiğini zorlanmadan anlayabilir.
