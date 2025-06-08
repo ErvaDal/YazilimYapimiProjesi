@@ -24,3 +24,24 @@ Projeyi Visual Studio ile açın.
 Gerekli NuGet paketlerini yükleyin (Magick.NET).
 SQL Server’da ZueKelime adlı veritabanını oluşturun ve gerekli tabloları kurun.
 App.config veya kod içerisindeki bağlantı stringini kendi sisteminize göre düzenleyin.
+
+
+ZueKelime Uygulaması - Formlar Açıklaması
+Bu uygulama, kullanıcıların İngilizce kelimeleri öğrenmesini, test etmesini ve gelişimini görmesini sağlayan C# tabanlı bir eğitim platformudur.
+
+1. İstatistikSayfasi.cs
+Kullanıcının kelime öğrenme durumu adım adım gösterilir.
+Toplam kelime sayısı ve öğrenilen kelime sayısı veritabanından çekilerek gösterilir.
+Her bir "öğrenme adımı" için kaç kelimenin olduğu ayrı ayrı yazdırılır.
+
+2. SinavSayfasi.cs
+Kullanıcıya öğrenme durumu uygun olan kelimelerden rastgele test soruları yöneltilir.
+3 şıklı çoktan seçmeli sistem kullanılır.
+Cevap doğruysa kelimenin adımı artırılır, yanlışsa sıfırlanır.
+Sınav sonunda kullanıcıya doğru cevap sayısı bildirilir.
+
+3. Wordle.cs
+5 harfli İngilizce kelimelerle oynanan mini bir Wordle oyunu sunar.
+Kullanıcı her harf için 🟩 (doğru yerde), 🟨 (yanlış yerde), ⬜️ (hiç yok) renk kodlarıyla geribildirim alır.
+6 tahmin hakkı ile doğru kelimeyi bulmaya çalışır.
+Tamamlanmış kelimelerden seçilen rastgele hedef kelimeye göre oynanır.
