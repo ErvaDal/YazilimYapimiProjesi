@@ -26,6 +26,8 @@ SQL Server’da ZueKelime adlı veritabanını oluşturun ve gerekli tabloları 
 App.config veya kod içerisindeki bağlantı stringini kendi sisteminize göre düzenleyin.
 
 
+
+
 🧩 ZueKelime Uygulaması - Formlara Genel Bakış
 ZueKelime, kullanıcıların İngilizce kelimeleri adım adım öğrenmelerini, gelişimlerini izlemelerini ve oyunlaştırılmış testlerle pekiştirmelerini amaçlayan bir dil öğrenme platformudur. Uygulama, Windows Forms teknolojisiyle geliştirilmiş olup veritabanı destekli çalışmaktadır.
 
