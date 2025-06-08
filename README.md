@@ -26,22 +26,27 @@ SQL Server’da ZueKelime adlı veritabanını oluşturun ve gerekli tabloları 
 App.config veya kod içerisindeki bağlantı stringini kendi sisteminize göre düzenleyin.
 
 
-ZueKelime Uygulaması - Formlar Açıklaması
-Bu uygulama, kullanıcıların İngilizce kelimeleri öğrenmesini, test etmesini ve gelişimini görmesini sağlayan C# tabanlı bir eğitim platformudur.
+🧩 ZueKelime Uygulaması - Formlara Genel Bakış
+ZueKelime, kullanıcıların İngilizce kelimeleri adım adım öğrenmelerini, gelişimlerini izlemelerini ve oyunlaştırılmış testlerle pekiştirmelerini amaçlayan bir dil öğrenme platformudur. Uygulama, Windows Forms teknolojisiyle geliştirilmiş olup veritabanı destekli çalışmaktadır.
 
-1. İstatistikSayfasi.cs
-Kullanıcının kelime öğrenme durumu adım adım gösterilir.
-Toplam kelime sayısı ve öğrenilen kelime sayısı veritabanından çekilerek gösterilir.
-Her bir "öğrenme adımı" için kaç kelimenin olduğu ayrı ayrı yazdırılır.
+1. İstatistikSayfasi.cs – Öğrenme İlerlemesini Görüntüleme
+Kullanıcının öğrenme sürecinde geçtiği tüm adımlar (0’dan 6’ya kadar) ayrı ayrı analiz edilir.
+Toplam sistemde bulunan kelime sayısı ile kullanıcının başarıyla tamamladığı kelime sayısı gösterilir.
+Hangi adımda kaç kelime olduğu kullanıcıya etiketler aracılığıyla net biçimde sunulur.
+Bu sayfa sayesinde kullanıcı, hangi seviyede ne kadar ilerlediğini somut verilerle görebilir.
 
-2. SinavSayfasi.cs
-Kullanıcıya öğrenme durumu uygun olan kelimelerden rastgele test soruları yöneltilir.
-3 şıklı çoktan seçmeli sistem kullanılır.
-Cevap doğruysa kelimenin adımı artırılır, yanlışsa sıfırlanır.
-Sınav sonunda kullanıcıya doğru cevap sayısı bildirilir.
+2. SinavSayfasi.cs – Akıllı Tekrar ve Test Modülü
+Uygulama, tekrar edilmesi gereken kelimeleri SM-2 algoritmasına benzer bir zamanlama ile belirler.
+Sistem, öğrenme seviyesine (Adım) göre hangi kelimenin sorulması gerektiğine karar verir.
+3 seçenekli çoktan seçmeli testler kullanıcıya rastgele olarak sunulur.
+Cevap doğruysa kelimenin seviyesi artırılır, yanlışsa sıfırlanır.
+Sınav tamamlandığında kullanıcıya doğru cevap sayısı ve performansı raporlanır.
 
-3. Wordle.cs
-5 harfli İngilizce kelimelerle oynanan mini bir Wordle oyunu sunar.
-Kullanıcı her harf için 🟩 (doğru yerde), 🟨 (yanlış yerde), ⬜️ (hiç yok) renk kodlarıyla geribildirim alır.
-6 tahmin hakkı ile doğru kelimeyi bulmaya çalışır.
-Tamamlanmış kelimelerden seçilen rastgele hedef kelimeye göre oynanır.
+3. Wordle.cs – 5 Harfli Kelimelerle Eğlenceli Tahmin Oyunu
+Kullanıcının daha önce tamamladığı (öğrenme adımı 6) kelimelerden rastgele bir kelime seçilir.
+Kullanıcı bu kelimeyi 6 tahmin hakkıyla bulmaya çalışır.
+Her harf için renk kodlarıyla geri bildirim verilir:
+🟩: Doğru harf, doğru yerde
+🟨: Doğru harf, yanlış yerde
+⬜️: Harf kelimede yok
+Eğlenceli ve öğretici bu modül, kelimeyi tanıma ve hatırlama becerisini güçlendirir.
